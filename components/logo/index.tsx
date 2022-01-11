@@ -15,7 +15,6 @@ const Logo: VoidFunctionComponent<SVGProps<SVGSVGElement>> = ({
     svg{
       width:75px;
       position:fixed;
-      text-align:center;
       margin-top:1em;  
     }
     `}</style>

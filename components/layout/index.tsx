@@ -7,12 +7,12 @@ import Logo from "components/logo";
 
 const Layout: FunctionComponent = ({ children }) => {
   const { fontColor, backgroundColor, setColors } = useBackground();
-  return (
-    <div style={{margin:'0 3em'}}>
+  return (<>
+    <Logo fill={fontColor}/>
+    <div style={{margin:'0 7em 0 3em'}}>
       <GlobalStyles fontColor={fontColor} backgroundColor={backgroundColor} />
-      <Logo fill={fontColor}/>
       {children}
-    </div>
+    </div></>
   );
 };
 
