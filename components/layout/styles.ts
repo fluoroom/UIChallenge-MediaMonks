@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle<Required<Colors>>`
     background-color: ${(props) => props.backgroundColor};
     color: ${(props) => props.fontColor};
     margin: 0;
+    padding: 0;
     min-height: 100vh
   }
 `;
