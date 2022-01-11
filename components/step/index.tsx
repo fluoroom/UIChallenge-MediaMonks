@@ -7,14 +7,14 @@ const Title = styled.h2`
     font-size:4em;
     font-family: 'HelveticaNow-Titles';
     text-align: left;
-    padding-top:1em;
+    padding-top:2em;
 `;
 const Wrapper = styled.div`
-    height:100vh;`;
+    min-height:100vh;`;
 
 const Text = styled.p`
     max-width:18em;
-    margin-top:6em;`
+    padding-top:6em;`
 
 const Step: FunctionComponent = (props) => {
     return (
