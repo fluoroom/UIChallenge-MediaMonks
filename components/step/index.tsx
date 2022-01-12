@@ -7,21 +7,40 @@ const Title = styled.h2`
     font-size:4em;
     font-family: 'HelveticaNow-Titles';
     text-align: left;
-    padding-top:2em;
+    max-width:100%;
+    position:absolute;
+    top:2em;
+    @media(max-device-width:720px){
+        font-size:2em;
+        top:3em;
+    }
+    @media(min-device-width:800px){
+        max-width:800px;
+    }
 `;
 const Wrapper = styled.div`
-    min-height:100vh;`;
+    min-height:100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    position:relative;
+    `;
+const Graph = styled.div`
+    max-width:800px;
+    position:relative;
+    margin: 0 auto;
+`;
 
 const Text = styled.p`
     max-width:18em;
-    padding-top:6em;`
+    bottom:6em;
+    position:absolute;`
 
 const Step: FunctionComponent = (props) => {
     return (
     <Wrapper>
         <Title>{props.title}</Title>
         <Text>{props.text}</Text>
-        <div>{props.graph}</div>
+        <Graph>{props.graph}</Graph>
     </Wrapper>
 )};
 

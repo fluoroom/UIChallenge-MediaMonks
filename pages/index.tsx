@@ -6,7 +6,6 @@ import UnderlinedText from "components/underline/underlined-text";
 import Step from "../components/step"
 import LetsAll from "components/lets-all";
 import styles from "styles/Home.module.scss";
-import Nav from "../components/nav"
 
 const Home: VoidFunctionComponent = () => {
   const { setColors } = useBackground();
@@ -19,7 +18,6 @@ const Home: VoidFunctionComponent = () => {
       <meta name="description" content="Let's all build this brand together" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Nav/>
     <Step title={<>Are you ready for your first challenge at Media.<UnderlinedText>Monks</UnderlinedText>?</>}
     fontColor="#DFBBFE" backgroundColor="#2C2D38"/>
     <Step graph={<LetsAll/>}

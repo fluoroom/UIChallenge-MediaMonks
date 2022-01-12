@@ -12,7 +12,7 @@ const defaultColors = {
 function MyApp({ Component, pageProps }) {
   return (
     <BackgroundProvider defaultColors={defaultColors}>
-      <ParallaxProvider>
+      <ParallaxProvider scrollAxis="vertical">
       <Layout>
         <Component {...pageProps} />
       </Layout>

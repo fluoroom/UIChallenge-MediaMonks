@@ -4,7 +4,6 @@ import { SVGProps } from "react"
 const BgArt = (props: SVGProps<SVGSVGElement>) => (<>
   <style jsx>{`
     svg{
-      padding-top:0vh;
       opacity:.5;
     }
   `}</style>
