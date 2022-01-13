@@ -16,6 +16,9 @@ const Title = styled.h2`
   @media (min-device-width: 800px) {
     max-width: 800px;
   }
+  @media(min-device-width: 800px) and (max-device-height:769px){
+    font-size:3em;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -30,7 +33,7 @@ const Wrapper = styled.div`
   justify-content:center;
   gap:12em;
   @media(max-device-width:430px){
-    gap:10em;
+    gap:8em;
   }
 `;
 
