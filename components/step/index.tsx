@@ -109,7 +109,7 @@ const Step: FunctionComponent<StepProps> = ({
     >
       <Title>{title}</Title>
       <Text>{text}</Text>
-      {graph && <Graph>{graph}</Graph> }
+      {graph && !title && !text && <Graph>{graph}</Graph> }
     </Wrapper>
   );
 };
