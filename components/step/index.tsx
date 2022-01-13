@@ -51,8 +51,8 @@ const Text = styled.p`
 
 export interface StepProps {
   id: string;
-  text?: JSX.Element;
-  title?: JSX.Element;
+  text?: JSX.Element|string;
+  title?: JSX.Element|string;
   graph?: JSX.Element;
   fontColor: string;
   backgroundColor: string;

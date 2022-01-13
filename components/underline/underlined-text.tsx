@@ -2,16 +2,10 @@ import { FunctionComponent } from 'react';
 import Underline from 'components/underline';
 import styled from 'styled-components';
 
-const style = {
-  position: 'relative',
-};
-const Container = styled.span`
-  position: relative;
-`;
 const UnderlinedText: FunctionComponent = (props) => (
-  <Container>
+  <span style={{position:'relative'}}>
     {props.children}
     <Underline />
-  </Container>
+  </span>
 );
 export default UnderlinedText;

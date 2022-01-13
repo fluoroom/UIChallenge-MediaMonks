@@ -9,6 +9,7 @@ const Underline: VoidFunctionComponent<SVGProps<SVGSVGElement>> = ({
         {`
           svg {
             position: absolute;
+            width:100%;
             bottom: -8%;
             left: 0;
           }

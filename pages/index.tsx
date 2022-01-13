@@ -42,21 +42,21 @@ const Home: VoidFunctionComponent = () => {
             <UnderlinedText>user</UnderlinedText> experience.
           </>
         }
-        text="If the websites are confusing, visitors will give up and find what they need elsewhere. Keeping navigation simple, intuitive and consistent is key."
+        text={<>If the websites are confusing, visitors will give up and find what they need elsewhere. Keeping navigation simple, intuitive and consistent is key.</>}
         fontColor="#7D26C9"
         backgroundColor="#FFCB16"
       />
       <Step
         id="4"
-        title="Visual hierarchy is the arrangement of elements in order of importance."
-        text="One of the most important functions of visual hierarchy is to establish a focal point. This shows visitors where the most important information is."
+        title={<>Visual hierarchy is the arrangement of elements in order of importance."</>}
+        text={<>One of the most important functions of visual hierarchy is to establish a focal point. This shows visitors where the most important information is."</>}
         fontColor="#E1FF9A"
         backgroundColor="#4F24EE"
       />
       <Step
         id="5"
-        title="Typography has an important role to play on the website."
-        text="It commands attention and works as the visual interpretation of the brands voice."
+        title={<>Typography has an important role to play on the website."</>}
+        text={<>It commands attention and works as the visual interpretation of the brands voice."</>}
         fontColor="#FF245B"
         backgroundColor="#3C0C60"
       />
