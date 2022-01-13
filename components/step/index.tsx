@@ -24,7 +24,6 @@ const Wrapper = styled.div`
   margin: 0 auto;
   position: relative;
   margin-bottom: 10vh;
-  border:2px dotted gray;
   display:flex;
   flex-direction:column;
   align-items: left;
@@ -85,7 +84,7 @@ const Step: FunctionComponent<StepProps> = ({
 
     if (!isVisible) {
       const elementClassName = 'c' + id;
-      
+
       if (
         prevClassName != elementClassName &&
         !(
