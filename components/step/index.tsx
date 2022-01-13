@@ -10,11 +10,8 @@ const Title = styled.h2`
   font-family: 'HelveticaNow-Titles';
   text-align: left;
   max-width: 100%;
-  position: absolute;
-  top: 2em;
   @media (max-device-width: 720px) {
     font-size: 2em;
-    top: 3em;
   }
   @media (min-device-width: 800px) {
     max-width: 800px;
@@ -27,6 +24,15 @@ const Wrapper = styled.div`
   margin: 0 auto;
   position: relative;
   margin-bottom: 10vh;
+  border:2px dotted gray;
+  display:flex;
+  flex-direction:column;
+  align-items: left;
+  justify-content:center;
+  gap:12em;
+  @media(max-device-width:430px){
+    gap:16em;
+  }
 `;
 
 const Graph = styled.div`
@@ -41,10 +47,7 @@ const Graph = styled.div`
 
 const Text = styled.p`
   max-width: 18em;
-  bottom: 6em;
-  position: absolute;
   @media (max-device-width: 430px) {
-    bottom: 24em;
   }
 `;
 
@@ -82,6 +85,7 @@ const Step: FunctionComponent<StepProps> = ({
 
     if (!isVisible) {
       const elementClassName = 'c' + id;
+      
       if (
         prevClassName != elementClassName &&
         !(
@@ -108,7 +112,7 @@ const Step: FunctionComponent<StepProps> = ({
     >
       <Title>{title}</Title>
       <Text>{text}</Text>
-      <Graph>{graph}</Graph>
+      {graph && <Graph>{graph}</Graph> }
     </Wrapper>
   );
 };
