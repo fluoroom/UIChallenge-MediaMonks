@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { BackgroundContext, Colors } from "context/background-context";
+import { useContext } from 'react';
+import { BackgroundContext, Colors } from 'context/background-context';
 
 const useBackground = () => {
   const context = useContext(BackgroundContext);

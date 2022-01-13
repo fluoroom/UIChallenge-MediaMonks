@@ -1,10 +1,17 @@
-import { FunctionComponent } from "react";
-import Underline from "components/underline";
+import { FunctionComponent } from 'react';
+import Underline from 'components/underline';
+import styled from 'styled-components';
 
 const style = {
-        position: "relative"
-    }
+  position: 'relative',
+};
+const Container = styled.span`
+  position: relative;
+`;
 const UnderlinedText: FunctionComponent = (props) => (
-        <span style={style}>{props.children}<Underline/></span>
+  <Container>
+    {props.children}
+    <Underline />
+  </Container>
 );
-export default UnderlinedText
+export default UnderlinedText;
