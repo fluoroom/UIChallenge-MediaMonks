@@ -46,8 +46,6 @@ const Graph = styled.div`
 
 const Text = styled.p`
   max-width: 18em;
-  @media (max-device-width: 430px) {
-  }
 `;
 
 export interface StepProps {
