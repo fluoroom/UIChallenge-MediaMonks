@@ -1,7 +1,5 @@
 import useBackground from 'hooks/use-background';
 import { FunctionComponent, VoidFunctionComponent } from 'react';
-import styled from 'styled-components';
-import { ClassName } from 'context/background-context';
 
 export interface NavLinkProps {
   to: string;

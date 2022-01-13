@@ -1,6 +1,5 @@
 import useBackground from 'hooks/use-background';
-import { Colors } from 'context/background-context';
-import { FunctionComponent, useState, useEffect, useRef, Ref } from 'react';
+import { FunctionComponent, useEffect, useRef, Ref } from 'react';
 import styled from 'styled-components';
 import { useIsVisible } from 'react-is-visible';
 

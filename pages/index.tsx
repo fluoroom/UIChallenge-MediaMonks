@@ -1,7 +1,5 @@
 import { VoidFunctionComponent } from 'react';
 import Head from 'next/head';
-import useBackground from 'hooks/use-background';
-import { Colors } from 'context/background-context';
 import UnderlinedText from 'components/underline/underlined-text';
 import Step from '../components/step';
 import LetsAll from 'components/lets-all';

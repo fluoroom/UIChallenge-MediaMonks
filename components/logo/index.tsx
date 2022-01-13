@@ -1,4 +1,3 @@
-import useBackground from 'hooks/use-background';
 import { VoidFunctionComponent, SVGProps } from 'react';
 
 const Logo: VoidFunctionComponent<SVGProps<SVGSVGElement>> = ({
