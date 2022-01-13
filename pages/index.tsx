@@ -48,15 +48,14 @@ const Home: VoidFunctionComponent = () => {
       />
       <Step
         id="4"
-        title={<>Visual hierarchy is the arrangement of elements in order of importance."</>}
-        text={<>One of the most important functions of visual hierarchy is to establish a focal point. This shows visitors where the most important information is."</>}
-        fontColor="#E1FF9A"
+        title="Visual hierarchy is the arrangement of elements in order of importance."
+        text={<>One of the most important functions of visual hierarchy is to establish a focal point. This shows visitors where the most important information is.</>}        fontColor="#E1FF9A"
         backgroundColor="#4F24EE"
       />
       <Step
         id="5"
-        title={<>Typography has an important role to play on the website."</>}
-        text={<>It commands attention and works as the visual interpretation of the brands voice."</>}
+        title={<>Typography has an important role to play on the website.</>}
+        text={<>It commands attention and works as the visual interpretation of the brands voice.</>}
         fontColor="#FF245B"
         backgroundColor="#3C0C60"
       />
