@@ -25,9 +25,9 @@ export const BackgroundContext = createContext<BackgroundContextProps>({
   className: 'c1',
 } as BackgroundContextProps);
 
-export const BackgroundProvider: FunctionComponent = ({
+export const BackgroundProvider: FunctionComponent<{defaultColors: Colors}> = ({
   children,
-  defaultColors,
+  defaultColors
 }) => {
   const [className, setClassName] = useState<ClassName>(`c1`);
   const [prevClassName, setPrevClassNameState] = useState<ClassName>(`c1`);
@@ -60,6 +60,7 @@ export const BackgroundProvider: FunctionComponent = ({
   return (
     <BackgroundContext.Provider
       value={{
+        prevColors,
         className,
         navStep,
         setNavStep,
