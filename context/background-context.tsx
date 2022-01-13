@@ -39,7 +39,7 @@ export const BackgroundProvider: FunctionComponent<{defaultColors: Colors}> = ({
   const setPreviousClassName = () => {
     const newPrevious = className;
     setClassName(prevClassName);
-    //console.log('set previous: '+prevClassName)
+    //console.log('set previous: '+prevClassName) 
     setPrevClassNameState(newPrevious);
   };
   const [colorsState, setColorsState] = useState<Colors>(defaultColors);
