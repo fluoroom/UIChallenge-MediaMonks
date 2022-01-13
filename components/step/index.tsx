@@ -41,6 +41,7 @@ const Graph = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
+  align-self:center;
 `;
 
 const Text = styled.p`
