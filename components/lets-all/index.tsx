@@ -11,7 +11,6 @@ const LetsAll = (props: SVGProps<SVGSVGElement>) => (
     </style>
     <svg
       viewBox="0 0 1041 632"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

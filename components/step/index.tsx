@@ -37,7 +37,6 @@ const Wrapper = styled.div`
 const Graph = styled.div`
   max-width: 800px;
   position: relative;
-  margin: 0 auto;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -107,8 +106,8 @@ const Step: FunctionComponent<StepProps> = ({
       data-bg-color={backgroundColor}
       data-font-color={fontColor}
     >
-      <Title>{title}</Title>
-      <Text>{text}</Text>
+      {title && <Title>{title}</Title> }
+      {text && <Text>{text}</Text>}
       {graph && !title && !text && <Graph>{graph}</Graph> }
     </Wrapper>
   );
