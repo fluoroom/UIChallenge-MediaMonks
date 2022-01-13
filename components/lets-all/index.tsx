@@ -5,12 +5,14 @@ const LetsAll = (props: SVGProps<SVGSVGElement>) => (
     <style jsx>
       {`
         svg {
-          width: '100%';
+          width:100%
         }
       `}
     </style>
     <svg
       viewBox="0 0 1041 632"
+      width="1041"
+      height="632"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

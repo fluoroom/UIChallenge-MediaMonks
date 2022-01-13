@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   justify-content:center;
   gap:12em;
   @media(max-device-width:430px){
-    gap:16em;
+    gap:10em;
   }
 `;
 
@@ -39,6 +39,7 @@ const Graph = styled.div`
   position: relative;
   display: flex;
   height: 100vh;
+  width:100%;
   justify-content: center;
   align-items: center;
   align-self:center;
